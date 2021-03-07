@@ -12,6 +12,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 class DataTablesTest extends TestCase
 {
     use RefreshDatabase;
+    
     /**
      * @test
      */
