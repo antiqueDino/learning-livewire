@@ -12,20 +12,8 @@
     <script src="https://unpkg.com/taggle/src/taggle.js" defer></script>
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.1/dist/alpine.min.js" defer></script>
+    <script src="https://unpkg.com/taggle/src/taggle.js" defer></script>
 
-    <style>
-        progress {
-            border-radius: 7px;
-        }
-        progress::-webkit-progress-bar {
-            background-color: lightgray;
-            border-radius: 7px;
-        }
-        progress::-webkit-progress-value {
-            background-color: blue;
-            border-radius: 7px;
-        }
-    </style>
 
     <style>
         progress {
