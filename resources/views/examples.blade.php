@@ -112,7 +112,7 @@
         @foreach ($posts as $post)
         <li>
             <a href="{{ route('post.show', $post) }}" class="text-blue-600">{{ $post->title }}</a>
-        {{-- <a href="{{ route('post.edit', $post) }}" class="text-blue-600"> (Edit)</a> --}}
+            <a href="{{ route('post.edit', $post) }}" class="text-blue-600"> (Edit)</a>
         </li>
         @endforeach 
     </ul>
