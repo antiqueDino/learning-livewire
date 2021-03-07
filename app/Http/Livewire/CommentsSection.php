@@ -14,8 +14,14 @@ class CommentsSection extends Component
     public $successMessage;
 
     protected $rules = [
-        'comment' => 'required|min:4'
+        'comment' => 'required|min:4',
+        'post' => 'required',
     ];
+
+    public function mount(Post $post)
+    {
+        $this->post = $post;
+    }
     
     public function postComment(Request $request){
         $this->validate();
