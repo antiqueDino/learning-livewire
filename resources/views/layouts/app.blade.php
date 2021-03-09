@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livewire Examples</title>
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <script src="{{ asset('js/app.js') }}" defer></script>
 
-    <livewire:styles />
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <script src="{{ asset('js/app.js') }}" ></script>
+    
+    @livewireStyles()
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.1/dist/alpine.min.js" defer></script>
     <script src="https://unpkg.com/taggle/src/taggle.js" defer></script>
@@ -132,7 +133,7 @@
         @yield('content')
     </main>
 
-    <livewire:scripts />
+    @livewireScripts()
 </body>
 
 </html>
