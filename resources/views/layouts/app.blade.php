@@ -9,7 +9,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script src="{{ asset('js/app.js') }}" ></script>
     
-    @livewireStyles
+    @livewireStyles()
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.1/dist/alpine.min.js" defer></script>
     <script src="https://unpkg.com/taggle/src/taggle.js" defer></script>
@@ -133,7 +133,7 @@
         @yield('content')
     </main>
 
-    @livewireScripts
+    @livewireScripts()
 </body>
 
 </html>
