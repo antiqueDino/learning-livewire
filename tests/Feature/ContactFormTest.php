@@ -2,20 +2,22 @@
 
 namespace Tests\Feature;
 
-use App\Http\Livewire\ContactForm;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Livewire\Livewire;
 use Tests\TestCase;
+use App\Models\User;
+use Livewire\Livewire;
+use App\Http\Livewire\ContactForm;
+use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class ContactFormTest extends TestCase
 {
+    use RefreshDatabase;
     /**
      * @test
      */
-
     public function main_page_contains_contact_form_livewire_component()
     {
+        $this->withoutExceptionHandling();
         $this->get('/')
             ->assertSeeLivewire('contact-form');
     }
