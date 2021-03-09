@@ -16,7 +16,7 @@
 
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-        @livewireStyles
+        {{-- @livewireStyles --}}
 
         <style>
             body {
@@ -26,7 +26,7 @@
     </head>
     <body>
         <livewire:counter/>
-        @livewireScripts
+        {{-- @livewireScripts --}}
 
     </body>
 </html>
