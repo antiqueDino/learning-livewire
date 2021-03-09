@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'asset_url' => 'https://learning-livewire.herokuapp.com/',
+    'asset_url' => env('APP_URL', null),
 
     /*
     |--------------------------------------------------------------------------
