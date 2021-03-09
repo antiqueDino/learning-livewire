@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'asset_url' => url('/'),
+    'asset_url' => 'https://learning-livewire.herokuapp.com/?active=true&sortAsc=true',
 
     /*
     |--------------------------------------------------------------------------
